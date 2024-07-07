@@ -1,0 +1,246 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('PK-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_4a0aded4-19f1-4fd7-b6ba-f65282911095_medium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.head {
+    display: flex;
+    height: 92px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 100px;
+    width: 180px;
+    margin-left: 0px;
+}
+
+.sign-in {
+    height: 32px;
+}
+
+.sign-in button {
+    background-color: red;
+    color: white;
+    height: 100%;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    
+}
+.first{
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+}
+.secoud{
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    margin-top: 3px;
+    font-weight: bold;
+    margin-right: 100px;
+    text-align: center;
+}
+.third{
+    margin-top: 8px;
+    font-weight:normal;
+}
+.email{
+    display: flex;
+}
+.email input{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 350px;
+    height: 56px;
+    width: 370px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9)
+}
+.email :hover{
+    color: white;
+    
+}
+.get button {
+    background-color: rgb(229, 9, 20);
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 56px;
+    width: 207px;
+    border-radius: 10px; /* Add this line to make the button curved */
+    border: none; /* Ensures no border around the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+.tv{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    margin-top: 280px;
+    display: flex;
+}
+.tv1{
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    height: 300px;
+    width: 100%; 
+    margin-top: 150px;
+}
+.tv1 p{
+    margin-left: 100px;
+}
+#fir{
+   color: #FFFFFF;
+   font-size: 24px;
+   width: 500px;
+   margin-left: 100px;
+}
+.tv2{
+    background-color: black;
+    background-image: url(tv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    margin-top: 90px;
+    width: 600px;
+    height: 250px;
+}
+
+.one{
+    margin-top: 0px;
+    background-image: url(AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png);
+    height: 320px ;
+}
+.part-2{
+    margin-top: 280px;
+    margin: 0px;
+}
+footer {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+}
+
+.foot-1, .list2, .list3, .list4 {
+    height: 300px;
+    color: rgb(255, 255, 255, 0.6);
+    text-decoration: underline;
+    margin: 20px; /* Adjust margin to control spacing */
+    font-size: 15px;
+    flex: 1 1 200px; /* Adjust the basis value for responsive behavior */
+}
+
+.foot-1 ul, .list2 ul, .list3 ul, .list4 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.foot-1 li, .list2 li, .list3 li, .list4 li {
+    margin-bottom: 20px;
+}
+
+.list2 ul, .list3 ul, .list4 ul {
+    margin-top: 30px;
+}
+.mine{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 100px;
+    }
+
+    .first {
+        font-size: 36px;
+    }
+
+    .secoud, .third {
+        font-size: 18px;
+    }
+
+    .email input, .get button {
+        width: 80%;
+    }
+
+    .tv1 {
+        font-size: 36px;
+    }
+
+    #fir {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 50px;
+    }
+
+    .first {
+        font-size: 24px;
+    }
+
+    .secoud, .third {
+        font-size: 16px;
+    }
+
+    .email input, .get button {
+        width: 100%;
+    }
+
+    .tv1 {
+        font-size: 24px;
+    }
+
+    #fir {
+        font-size: 18px;
+    }
+
+    .foot-1, .list2, .list3, .list4 {
+        font-size: 14px;
+    }
+}
